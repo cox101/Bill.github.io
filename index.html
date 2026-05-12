@@ -309,15 +309,14 @@ body.editing nav{top:3.4rem}
     <li><a href="#certs">Certs</a></li>
     <li><a href="#contact">Contact</a></li>
   </ul>
-  <button class="term-btn" onclick="toggleEdit()" id="editBtn" style="background:linear-gradient(135deg,var(--accent),var(--warn))" title="Edit content (Ctrl+E)">✎ Edit</button>
-  <button class="term-btn" onclick="downloadSite()" style="background:linear-gradient(135deg,var(--secondary),var(--accent))">↓ Download</button>
-  <button class="term-btn" onclick="toggleTerm()">▣ Terminal</button>
+ 
+
 </nav>
 
 <section id="hero">
   <div class="container">
     <div class="hero-tag"><span class="pulse"></span> 24/7 NOC engineer · Open to opportunities</div>
-    <h1 class="hero-name">[Your Name]</h1>
+    <h1 class="hero-name">Bill Mecha</h1>
     <div class="hero-role">Technical Support Engineer <span class="acc">×</span> Software Engineer</div>
     <div class="hero-typed"><span class="prompt">~ $</span> <span id="typed"></span><span class="cursor-blink"></span></div>
     <p class="hero-desc">Network Operations engineer with <b>2+ years</b> supporting ISP and enterprise environments — specialized in <b>LAN/WAN, VPN, FTTH, and SLA-driven incident response</b>. ALX-certified software engineer, CCNA and Security+ in progress. I keep networks alive, customers connected, and tickets closed.</p>
@@ -553,9 +552,9 @@ body.editing nav{top:3.4rem}
         <h3>Open channel.</h3>
         <p>Looking for a NOC engineer, technical support specialist, or someone who can both troubleshoot the wire and ship the code? Let's talk. I respond fast — usually within a few hours during business time, even on shift.</p>
         <div class="contact-links">
-          <a href="mailto:you@email.com" class="c-link"><div class="ico">@</div><div><span class="lbl">Email</span><span class="val">you@email.com</span></div></a>
-          <a href="https://linkedin.com/in/yourprofile" class="c-link"><div class="ico">in</div><div><span class="lbl">LinkedIn</span><span class="val">linkedin.com/in/yourprofile</span></div></a>
-          <a href="https://github.com/yourusername" class="c-link"><div class="ico">⌥</div><div><span class="lbl">GitHub</span><span class="val">github.com/yourusername</span></div></a>
+          <a href="mailto:mogenibillmecha@email.com" class="c-link"><div class="ico">@</div><div><span class="lbl">Email</span><span class="val">mogenibillmecha@email.com</span></div></a>
+          <a href="https://linkedin.com/in/billmecha" class="c-link"><div class="ico">in</div><div><span class="lbl">LinkedIn</span><span class="val">linkedin.com/in/billmecha</span></div></a>
+          <a href="https://github.com/cox101" class="c-link"><div class="ico">⌥</div><div><span class="lbl">GitHub</span><span class="val">github.com/cox101</span></div></a>
           <a href="#" class="c-link"><div class="ico">⌘</div><div><span class="lbl">Location</span><span class="val">Nairobi, Kenya · UTC+3 · 24/7 capable</span></div></a>
         </div>
       </div>
@@ -571,21 +570,11 @@ body.editing nav{top:3.4rem}
 </section>
 
 <footer>
-  <p>⚙️ Engineered with <span class="heart">precision</span> by <span>[Your Name]</span> · Network Operations & Software · © 2026</p>
+  <p>⚙️ Engineered with <span class="heart">precision</span> by <span>Bill Mecha</span> · Network Operations & Software · © 2026</p>
   <p style="margin-top:.4rem;opacity:.5">Press <kbd style="background:rgba(139,92,246,.1);border:1px solid var(--border);padding:1px 5px;border-radius:3px;font-size:.7rem">~</kbd> or click ▣ Terminal · Try <code style="color:var(--secondary)">sudo clearance</code></p>
 </footer>
 
-<div id="terminal">
-  <div class="term-bar">
-    <div class="term-dots"><span></span><span></span><span></span></div>
-    <div class="term-title">~/portfolio — secure.shell</div>
-    <button class="term-close" onclick="toggleTerm()">✕</button>
-  </div>
-  <div class="term-body" id="termBody">
-    <div class="term-line out" style="color:var(--secondary)">Welcome to the portfolio terminal. Type <span style="color:var(--accent)">help</span> to begin.</div>
-    <div class="term-input-row"><span class="term-prompt">~ $</span><input type="text" id="termIn" autocomplete="off" spellcheck="false" placeholder="type a command..."></div>
-  </div>
-</div>
+
 
 <script>
 const bootLines = document.querySelectorAll('.boot-line');
@@ -1053,12 +1042,13 @@ function sendMsg(btn) {
 }
 
 // ============== EDIT MODE ==============
-const EDITABLE_SEL = '.hero-name, .hero-role, .hero-desc, .s-title, .s-sub, .about-text p, .about-text h3, .info-row .v, .strength, .tl-role, .tl-co, .tl-period, .tl-bul li, .proj-name, .proj-desc, .cert-name, .cert-issuer, .c-link .val, .stat-num, .stat-label, .skill-cat .ct, .skill-cat .cl span, .proj-stack span, .tl-tech span, .hero-tag, .proj-status, .cert-tag, footer p';
-let editing = false;
-const editBanner = document.createElement('div');
-editBanner.className = 'edit-banner';
-editBanner.innerHTML = '<span>✎ EDIT MODE</span><span class="hint">Click any text to edit · Ctrl+E to toggle</span><button onclick="saveEdited()">💾 Save & Download</button><button onclick="toggleEdit()">✕ Exit</button>';
-document.body.appendChild(editBanner);
+//const EDITABLE_SEL = '.hero-name, .hero-role, .hero-desc, .s-title, .s-sub, .about-text p, .about-text h3, .info-row .v, .strength, .tl-role, .tl-co, .tl-period, .tl-bul li, .proj-name, .proj-desc, .cert-name, .cert-issuer, .c-link .val, .stat-num, .stat-label, .skill-cat .ct, .skill-cat .cl span, .proj-stack span, .tl-tech span, .hero-tag, .proj-status, .cert-tag, footer p';
+//let editing = false;
+//const editBanner = document.createElement('div');
+//editBanner.className = 'edit-banner';
+//editBanner.innerHTML = '<span>✎ EDIT MODE</span><span class="hint">Click any text to edit · Ctrl+E to toggle</span><button onclick="saveEdited()">💾 Save & Download</button><button onclick="toggleEdit()">✕ Exit</button>';
+//document.body.appendChild(editBanner);
+//
 
 function showToast(msg, type) {
   const toast = document.createElement('div');
@@ -1175,13 +1165,13 @@ function saveEdited() {
   setTimeout(() => URL.revokeObjectURL(url), 1000);
 
   // Restore edit mode if it was on
-  if (wasEditing) {
-    document.body.classList.add('editing');
-    editBanner.classList.add('show');
-    document.querySelectorAll(EDITABLE_SEL).forEach(el => el.setAttribute('contenteditable', 'true'));
-  }
+  //if (wasEditing) {
+   // document.body.classList.add('editing');
+    //editBanner.classList.add('show');
+   // document.querySelectorAll(EDITABLE_SEL).forEach(el => el.setAttribute('contenteditable', 'true'));
+ // }
 
-  showToast('✓ index.html downloaded · Replace it in your GitHub repo to deploy');
+  //showToast('✓ index.html downloaded · Replace it in your GitHub repo to deploy');
 }
 
 // Hook into terminal commands
