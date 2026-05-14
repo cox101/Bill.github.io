@@ -317,7 +317,7 @@ body.editing nav{top:3.4rem}
     <li><a href="#certs">Certs</a></li>
     <li><a href="#contact">Contact</a></li>
   </ul>
- 
+  <button class="term-btn" id="editBtn" type="button" onclick="toggleTerm()">▣ Terminal</button>
 
 </nav>
 
@@ -580,6 +580,21 @@ body.editing nav{top:3.4rem}
   <p>⚙️ Engineered with <span class="heart">precision</span> by <span>Bill Mecha</span> · Network Operations & Software · © 2026</p>
   <p style="margin-top:.4rem;opacity:.5">Press <kbd style="background:rgba(139,92,246,.1);border:1px solid var(--border);padding:1px 5px;border-radius:3px;font-size:.7rem">~</kbd> or click ▣ Terminal · Try <code style="color:var(--secondary)">sudo clearance</code></p>
 </footer>
+
+<div id="terminal">
+  <div class="term-bar">
+    <div class="term-dots"><span></span><span></span><span></span></div>
+    <div class="term-title">portfolio-shell</div>
+    <button class="term-close" type="button" onclick="toggleTerm()">×</button>
+  </div>
+  <div class="term-body" id="termBody">
+    <div class="term-line out">type <span style="color:var(--secondary)">help</span> for available commands</div>
+    <div class="term-input-row">
+      <span class="term-prompt">~</span>
+      <input id="termIn" type="text" autocomplete="off" spellcheck="false" placeholder="command...">
+    </div>
+  </div>
+</div>
 
 
 

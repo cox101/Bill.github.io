@@ -43,6 +43,8 @@ python3 -m http.server 8000
 
 Deployed via GitHub Pages on every push to `main`.
 
+GitHub Pages should be configured to use the `GitHub Actions` source so the workflow in `.github/workflows/deploy-pages.yml` can publish the site.
+
 ## Connect
 
 - 📧 Email: mogenibillmecha@gmail.com
