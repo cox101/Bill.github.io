@@ -2,7 +2,7 @@
 
 > Network Operations & Software Engineer · ISP support, network security, and full-stack development.
 
-**🔗 Live site:** [Bill Mecha.github.io/portfolio](https://Bill Mecha.github.io/portfolio/)
+**🔗 Live site:** [billmecha.github.io/portfolio](https://billmecha.github.io/portfolio/)
 
 ---
 
