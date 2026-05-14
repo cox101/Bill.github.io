@@ -45,8 +45,8 @@ Deployed via GitHub Pages on every push to `main`.
 
 ## Connect
 
-- 📧 Email: your@email.com
-- 💼 LinkedIn: [linkedin.com/in/yourprofile](https://linkedin.com/in/billmecha)
+- 📧 Email: mogenibillmecha@gmail.com
+- 💼 LinkedIn: [linkedin.com/in/billmecha](https://linkedin.com/in/billmecha)
 - 🐙 GitHub: [@cox101](https://github.com/cox101)
 - 📍 Nairobi, Kenya
 
